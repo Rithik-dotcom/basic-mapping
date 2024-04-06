@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+//parent file
 import './App.css';
+import { myData } from './data/data'  //when not a default export we import inside curly braces
+import Childcomponent from './components/ChildComponent/Childcomponent';
 
 function App() {
+  const data = myData;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Parent Containing the ChildComponent</h1>
+      <div className='flexing-child ' >
+      {data.map(each => (
+        <Childcomponent key={each.id} sendingData={each} />
+      )
+      )}
+       </div>
     </div>
   );
 }

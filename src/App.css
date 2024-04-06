@@ -1,7 +1,14 @@
 .App {
   text-align: center;
+ 
 }
+.flexing-child{
+  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 400px 100px;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

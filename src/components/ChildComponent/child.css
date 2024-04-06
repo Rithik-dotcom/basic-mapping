@@ -1,0 +1,16 @@
+.main-div{
+border: 2px solid white;
+margin: 10px 40px;
+background-color: rgb(37, 37, 250);
+padding: 10px 20px;
+
+}
+
+p{
+    color: white;
+ 
+}
+.image-size{
+    width: 40vb;
+    height: 40vh;
+}
